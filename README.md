@@ -1,1 +1,143 @@
-# mn_installation
+# High Temperature Coin Masternode Installation Guide
+
+## Installing a HTRC masternode on a Linux server running Ubuntu 16.04.:
+
+1. Connect to your VPS via command line and enter the following code:
+
+```
+wget -q http://htrcoin.com/htrc_install.sh && bash htrc_install.sh
+```
+
+2. Wait for the installation to finish and let the script generate a **private key (genkey)** for you.
+
+3. Create a new text file in your editor. Chose an alias for your masternode (MN1 for example) and copy the **ip:port** and **genkey** from the installation outputs and paste it after the alias so it looks like this:
+
+```
+MN1 ip:port genkey
+```
+
+4. Wait until the blockchain is **fully synced**. You can check the block count with:
+
+```
+hightemperatured getblockcount
+```
+
+or
+
+```
+hightemperatured getinfo
+```
+
+and you can also check if your masternode is fully synced to the network with:
+
+```
+hightemperatured mnsync status
+```
+
+***
+
+## Preparing and setting up the HTRC desktop wallet
+
+Now that your masternode is up and running, it is time to configure the desktop wallet. The following steps will show you how to do it:
+
+1. Open up the High Temperature Coin desktop wallet.
+
+2. Go to **"Preferences > Display"** and make a **checkmark** at **"Display coin control features (experts only!)"**.
+
+3. Now we need to edit the wallet configuration file (HighTemperature.conf) which you will find here:
+
+**Windows**
+
+```
+C:\Users\Username\AppData\Roaming\HighTemperature
+```
+
+Tip: It is easier to locate the folder when you have the displaying of hidden files activated (search in google for: show hidden files in windows).
+
+**MAC**
+
+```
+/Users/Username/Library/Application Support/HighTemperature
+```
+
+Tip: It is easier to locate the folder when you have the displaying of hidden files activated. To show hidden files on MAC OS X open up the terminal and type:
+
+```
+defaults write com.apple.finder AppleShowAllFiles YES
+killall Finder
+```
+
+4. Right click on the **HighTemperature.conf** file and open it up in a text editor. Then paste the following line at the end of the file:
+
+```
+mnconflock=1
+```
+
+Save and close the file.
+
+5. Now open up your wallet again, go to the Receive tab and create a New Address: **MN1**. Right click on the newly created address and select "Copy Address".
+
+6. Switch to the Send tab and send exactly **100,000 HTRC** to this address.
+
+7. Go to the Transactions tab and wait for the first confirmation.
+
+8. Open up **Help > Debug window > Console** and type:
+
+```
+masternode outputs
+```
+
+9. Copy the txid (first part) and the index (0 or 1) of the output and paste it in the text file where you inserted your ip:port and private key before so it looks like this:
+
+```
+MN1 ip:port genkey txid index
+```
+
+Mark the line and copy it.
+
+10. Now go to the folder where your HighTemperature.conf is located at, open up the **masternode.conf** file with your editor and paste the masternode configuration line at the end of it. 
+
+Save and close the file.
+
+11. Restart your wallet.
+
+12. Once the transaction has **20 confirmations** switch to the **Send tab** and click on **"Inputs ..."** under **Coin Control Features**. Switch to *List mode*, right click your masternode transaction and select **Unlock unspent**.
+
+13. Now switch to the **Masternodes tab**, click *Update*, select the masternode you want to start and press *Start*. You will now get a message that the masternode has been successfully started. Click on *Update again* to see that your *Masternode is Running*.
+
+14. Go to the **Coin Control Features** again, switch to **List mode** and set **Lock unspent** on your masternode transaction again.
+
+15. To double check that your masternode is properly running, switch back to your VPS and type:
+
+```
+hightemperatured masternode status
+```
+
+You should receive "Status 9: Masternode is running remotely".
+
+
+*Congratulations, you have just set up your first HTRC masternode!*
+
+
+## IMPORTANT: Always make sure your masternode transactions are locked before you send coins, else it might destroy the transaction and you have to set it up again.
+ 
+
+## VPS commands:
+```
+hightemperatured getinfo
+hightemperatured mnsync status
+hightemperatured masternode status
+```
+Also, if you want to check/start/stop **HighTemperature**, run one of the following commands as **root**:
+
+**Ubuntu 16.04**:
+```
+systemctl status HighTemperature #To check the service is running.
+systemctl start HighTemperature #To start LightPayCoin service.
+systemctl stop HighTemperature #To stop LightPayCoin service.
+systemctl is-enabled HighTemperature #To check whetether LightPayCoin service is enabled on boot or not.
+```
+
+## If you want to set up multiple masternodes here is a tip for the transaction part:
+
+Follow the steps **6 - 9**. Then go to your **Coin Control Features** and **lock** the newly created masternode transaction. Repeat those steps for the other transactions.
