@@ -28,6 +28,8 @@ or
 hightemperatured getinfo
 ```
 
+and compare it to the current block number on http://chain.htrcoin.com or in your wallet under **Help > Debug window > Information**
+
 ***
 
 ## Preparing and setting up the HTRC desktop wallet
