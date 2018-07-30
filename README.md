@@ -97,7 +97,7 @@ Save and close the file.
 
 12. Once the transaction has **20 confirmations** switch to the **Send tab** and click on **"Inputs ..."** under **Coin Control Features**. Switch to *List mode*, right click your masternode transaction and select **Unlock unspent**.
 
-13. Now switch to the **Masternodes tab**, click *Update*, select the masternode you want to start and press *Start*. You will now get a message that the masternode has been successfully started. Click on *Update again* to see that your *Masternode is Running*.
+13. Now switch to the **Masternodes tab**, click **Update**, select the masternode you want to start and press **Start**. You will now get a message that the masternode has been successfully started. Click on **Update** again to see that your **Masternode is Running**.
 
 14. Go to the **Coin Control Features** again, switch to **List mode** and set **Lock unspent** on your masternode transaction again.
 
@@ -107,7 +107,7 @@ Save and close the file.
 hightemperatured masternode status
 ```
 
-You should receive "Status 9: Masternode is running remotely".
+You should receive **"Status 9: Masternode is running remotely"**.
 
 
 ### Congratulations, you have just set up your first HTRC masternode!
