@@ -38,7 +38,7 @@ Now that your masternode is up and running, it is time to configure the desktop 
 
 2. Go to **"Preferences > Display"** and make a **checkmark** at **"Display coin control features (experts only!)"**.
 
-3. Now we need to edit the wallet configuration file (HighTemperature.conf) which you will find here:
+3. Now we need to edit the wallet configuration file (**HighTemperature.conf**) which you will find here:
 
 **Windows**
 
