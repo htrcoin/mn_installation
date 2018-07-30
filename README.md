@@ -81,7 +81,7 @@ Save and close the file.
 masternode outputs
 ```
 
-9. Copy the txid (first part) and the index (0 or 1) of the output and paste it in the text file where you inserted your ip:port and private key before so it looks like this:
+9. Copy the **txid** (first part) and the **index** (second part: 0 or 1) of the output and paste it in the text file where you inserted your ip:port and private key before so it looks like this:
 
 ```
 MN1 ip:port genkey txid index
