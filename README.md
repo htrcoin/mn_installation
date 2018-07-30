@@ -28,12 +28,6 @@ or
 hightemperatured getinfo
 ```
 
-and you can also check if your masternode is fully synced to the network with:
-
-```
-hightemperatured mnsync status
-```
-
 ***
 
 ## Preparing and setting up the HTRC desktop wallet
