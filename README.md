@@ -127,9 +127,9 @@ Also, if you want to check/start/stop **HighTemperature**, run one of the follow
 **Ubuntu 16.04**:
 ```
 systemctl status HighTemperature #To check the service is running.
-systemctl start HighTemperature #To start LightPayCoin service.
-systemctl stop HighTemperature #To stop LightPayCoin service.
-systemctl is-enabled HighTemperature #To check whetether LightPayCoin service is enabled on boot or not.
+systemctl start HighTemperature #To start the service.
+systemctl stop HighTemperature #To stop the service.
+systemctl is-enabled HighTemperature #To check whetether the service is enabled on boot or not.
 ```
 
 ## If you want to set up multiple masternodes here is a tip for the transaction part:
