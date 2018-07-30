@@ -118,8 +118,8 @@ You should receive **"Status 9: Masternode is running remotely"**.
 
 ## VPS commands:
 ```
+hightemperatured getblockcount
 hightemperatured getinfo
-hightemperatured mnsync status
 hightemperatured masternode status
 ```
 Also, if you want to check/start/stop **HighTemperature**, run one of the following commands as **root**:
