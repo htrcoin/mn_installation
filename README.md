@@ -116,7 +116,7 @@ hightemperatured masternode status
 You should receive "Status 9: Masternode is running remotely".
 
 
-*Congratulations, you have just set up your first HTRC masternode!*
+###Congratulations, you have just set up your first HTRC masternode!
 
 
 ## IMPORTANT: Always make sure your masternode transactions are locked before you send coins, else it might destroy the transaction and you have to set it up again.
