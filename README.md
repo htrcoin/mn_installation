@@ -38,7 +38,7 @@ Now that your masternode is up and running, it is time to configure the desktop 
 
 1. Open up the High Temperature Coin desktop wallet.
 
-2. Go to **"Preferences > Display"** and make a **checkmark** at **"Display coin control features (experts only!)"**.
+2. Go to **"Settings > Options > Display"** (**"Preferences > Display"** for MAC) and make a **checkmark** at **"Display coin control features (experts only!)"**.
 
 3. Now we need to edit the wallet configuration file (**HighTemperature.conf**) which you will find here:
 
@@ -97,11 +97,11 @@ Save and close the file.
 
 11. Restart your wallet.
 
-12. Once the transaction has **20 confirmations** switch to the **Send tab** and click on **"Inputs ..."** under **Coin Control Features**. Switch to *List mode*, right click your masternode transaction and select **Unlock unspent**.
+12. Once the transaction has **20 confirmations** switch to the **Send tab** and click on **"Inputs ..."** under **Coin Control Features**. Switch to **"List mode"**, right click your masternode transaction and select **"Unlock unspent"**.
 
-13. Now switch to the **Masternodes tab**, click **Update**, select the masternode you want to start and press **Start**. You will now get a message that the masternode has been successfully started. Click on **Update** again to see that your **Masternode is Running**.
+13. Now switch to the **Masternodes tab**, click **Update**, select the masternode you want to start and press **"Start"**. You will now get a message that the masternode has been successfully started. Click on **"Update"** again to see that your **Masternode is Running**.
 
-14. Go to the **Coin Control Features** again, switch to **List mode** and set **Lock unspent** on your masternode transaction again.
+14. Go to the **Coin Control Features** again, switch to **"List mode"** and set **"Lock unspent"** on your masternode transaction again.
 
 15. To double check that your masternode is properly running, switch back to your VPS and type:
 
@@ -134,6 +134,6 @@ systemctl stop HighTemperature #To stop the service.
 systemctl is-enabled HighTemperature #To check whetether the service is enabled on boot or not.
 ```
 
-## If you want to set up multiple masternodes here is a tip for the transaction part:
+## If you want to set up multiple masternodes:
 
-Follow the steps **6 - 9**. Then go to your **Coin Control Features** and **lock** the newly created masternode transaction. Repeat those steps for the other transactions.
+Create a new address for each Masternode (MN2, MN3, MN4, ..) Follow the steps **6 - 9**. Then go to your **Coin Control Features** and **lock** the newly created masternode transaction. Repeat those steps for the other transactions.
