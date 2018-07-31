@@ -136,4 +136,4 @@ systemctl is-enabled HighTemperature #To check whetether the service is enabled 
 
 ## If you want to set up multiple masternodes:
 
-Create a new address for each Masternode (MN2, MN3, MN4, ..). Follow the steps **6 - 9**. Then go to your **Coin Control Features** and **lock** the newly created masternode transaction. Repeat those steps for the other transactions.
+Create a new address for the Masternode (e.g. MN2). Follow the steps **6 - 9**. Then go to your **Coin Control Features** and **lock** the newly created masternode transaction. Repeat those steps for each additional masternode.
