@@ -91,7 +91,7 @@ MN1 ip:port genkey txid index
 
 Mark the line and copy it.
 
-10. Now go to the folder where your HighTemperature.conf is located at, open up the **masternode.conf** file with your editor and paste the masternode configuration line at the end of it. *(Note: If the file doesn't exist already, create it with your text editor)*
+10. Now go to the folder where your HighTemperature.conf is located at, open up the **masternode.conf** file with your editor and paste the masternode configuration line at the end of it *(Note: If the file doesn't exist already, create it with your text editor)*.
 
 Save and close the file.
 
