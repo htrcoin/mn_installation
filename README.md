@@ -116,8 +116,11 @@ You should receive **"Status 9: Masternode is running remotely"**.
 
 
 ## IMPORTANT: Always make sure your masternode transactions are locked before you send coins, else it might destroy the transaction and you have to set it up again.
- 
 
+## If you want to set up multiple masternodes:
+
+Create a new address for the Masternode (e.g. MN2). Follow the steps **6 - 9**. Then go to your **Coin Control Features** and **lock** the newly created masternode transaction. Repeat those steps for each additional masternode.
+ 
 ## VPS commands:
 ```
 hightemperatured getblockcount
@@ -133,7 +136,3 @@ systemctl start HighTemperature #To start the service.
 systemctl stop HighTemperature #To stop the service.
 systemctl is-enabled HighTemperature #To check whetether the service is enabled on boot or not.
 ```
-
-## If you want to set up multiple masternodes:
-
-Create a new address for the Masternode (e.g. MN2). Follow the steps **6 - 9**. Then go to your **Coin Control Features** and **lock** the newly created masternode transaction. Repeat those steps for each additional masternode.
