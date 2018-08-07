@@ -5,7 +5,9 @@
 1. Connect to your VPS via command line and enter the following code:
 
 ```
-wget -q http://htrcoin.com/htrc_install.sh && bash htrc_install.sh
+git clone https://github.com/htrcoin/mn_installation.git
+cd mn_installation
+bash htrc_install.sh
 ```
 
 2. Wait for the installation to finish and let the script generate a **private key (genkey)** for you.
