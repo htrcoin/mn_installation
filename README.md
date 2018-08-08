@@ -36,7 +36,7 @@ and compare it to the current block number on http://chain.htrcoin.com or in you
 
 ## Preparing and setting up the HTRC desktop wallet
 
-### Note: always make sure your are running the latest version of the wallet (currently v1.1.0.0-60032)!
+**Note: always make sure your are running the latest version of the wallet (currently v1.1.0.0-60032).
 
 Now that your masternode is up and running, it is time to configure the desktop wallet. The following steps will show you how to do it:
 
