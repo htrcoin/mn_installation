@@ -44,7 +44,7 @@ Now that your masternode is up and running, it is time to configure the desktop 
 
 2. Go to **"Settings > Options > Display"** (**"Preferences > Display"** for MAC) and make a **checkmark** at **"Display coin control features (experts only!)"**.
 
-3. Now we need to edit the wallet configuration file (**HighTemperature.conf**) which you will find here:
+3. Now we need to edit the local wallet configuration file (**HighTemperature.conf**) which you will find here:
 
 **Windows**
 
@@ -95,7 +95,7 @@ MN1 ip:port genkey txid index
 
 Mark the line and copy it.
 
-10. Now go to the folder where your HighTemperature.conf is located at, open up the **masternode.conf** file with your editor and paste the masternode configuration line at the end of it *(Note: If the file doesn't exist already, create it with your text editor and make sure you save it with the **.conf** extension)*.
+10. Now go to the folder where your HighTemperature.conf of your local wallet is located at, open up the **masternode.conf** file with your editor and paste the masternode configuration line at the end of it *(Note: If the file doesn't exist already, create it with your text editor and make sure you save it with the **.conf** extension)*.
 
 Save and close the file.
 
