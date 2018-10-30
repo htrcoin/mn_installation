@@ -77,7 +77,7 @@ Save and close the file.
 
 5. Now open up your wallet again, go to the Receive tab and create a New Address: **MN1**. Right click on the newly created address and select "Copy Address".
 
-6. Switch to the Send tab and send exactly **100,000 HTRC** to this address.
+6. Switch to the Send tab and send exactly **150,000 HTRC** to this address.
 
 7. Go to the Transactions tab and wait for the first confirmation.
 
